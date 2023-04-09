@@ -1,0 +1,30 @@
+<h2>Choose a base</h2>
+<div class="card-container">
+    <a class="card rice-card" target="_blank" rel="noopener" (click)="selectRice()"><span>Rice</span></a>
+    <a class="card pasta-card" target="_blank" rel="noopener" (click)="selectPasta()"><span>Pasta</span></a>
+    <a class="card tortilla-card" target="_blank" rel="noopener" (click)="selectTortilla()"><span>Tortillas</span></a>
+    <a class="card bean-card" target="_blank" rel="noopener" (click)="selectBeans()"><span>Beans</span></a>
+    <a class="card" target="_blank" rel="noopener" (click)="selectNone()"><span>None</span></a>
+</div> 
+    
+    <!-- Rices -->
+    <div *ngIf="riceSelected" class="alert alert-success box-msg" role="alert"> 
+      <strong>Rice!</strong> You have chosen rice.
+    </div>
+
+    <!-- Pastas -->
+    <div *ngIf="pastaSelected" class="alert alert-success box-msg" role="alert"> 
+      <strong>Pasta!</strong> You have chosen pasta.
+    </div>
+
+    <!-- Tortillas -->
+    <div *ngIf="tortillaSelected" class="alert alert-success box-msg" role="alert"> 
+      <strong>Tortillas!</strong> You have chosen tortillas.
+    </div>
+
+    <!-- Beans -->
+    <div *ngIf="beanSelected" class="alert alert-success box-msg" role="alert"> 
+      <strong>Beans!</strong> You have chosen beans.
+    </div>
+
+

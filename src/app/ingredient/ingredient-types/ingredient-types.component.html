@@ -1,0 +1,14 @@
+<p>ingredient-types works!</p>
+<div class="card-container">
+    <a class="card rice-card" target="_blank" rel="noopener" (click)="selectRice()"><span>Rice</span></a>
+
+
+    <a 
+        class="card rice-card"
+        *ngFor="let ingredientType of ingredientTypes; index as i;"
+        type="button" 
+        (click)="selectIngredientType(ingredientType.name)"
+        [ngClass]="">
+        {{ingredientType.name}}
+    </a>
+</div> 

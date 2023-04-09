@@ -1,5 +1,5 @@
 # Create image based on the official Node 10 image from dockerhub
-FROM node:12
+FROM node:18
 
 # Create a directory where our app will be placed
 RUN mkdir -p /app
@@ -18,6 +18,7 @@ COPY . /app/
 
 # Expose the port the app runs in
 EXPOSE 80
+EXPOSE 4200
 
 # Serve the app
 CMD ["npm", "start"]
