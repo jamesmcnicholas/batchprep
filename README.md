@@ -1,4 +1,7 @@
 # Batchprep
+MEAN app for generating meal prep recipes on the fly
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
